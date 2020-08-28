@@ -1,0 +1,23 @@
+services:
+  hybridmind.lgsl.functions:
+    class: hybridmind\lgsl\core\functions_lgsl
+    arguments:
+      - '@auth'
+      - '@config'
+      - '@cache'
+      - '@content.visibility'
+      - '@dbal.conn'
+      - '@dispatcher'
+      - '@template'
+      - '@user'
+      - '%core.root_path%'
+      - '%core.php_ext%'
+  hybridmind.lgsl.listener:
+    class: hybridmind\lgsl\event\listener
+    arguments:
+      - '@hybridmind.lgsl.functions'
+      - '@config'
+      - '@template'
+      - '@user'
+    tags:
+      - name: event.listener

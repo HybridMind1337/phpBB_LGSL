@@ -1,0 +1,31 @@
+{
+	"name": "hybridmind/lgsl",
+	"type": "phpbb-extension",
+	"description": "Displays LGSL at the top of the forum",
+	"homepage": "https://webocean.info/",
+	"version": "1.0.1",
+	"time": "2020-08-28",
+    "keywords": [
+        "phpbb",
+        "extension",
+        "lgsl"
+    ],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "hybridmind",
+			"homepage": "https://webocean.info/",
+			"email": "admin@webocean.info",
+			"role": "Web Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"extra": {
+		"display-name": "LGSL",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.2.0,<3.3.*@dev"
+		}
+	}
+}
